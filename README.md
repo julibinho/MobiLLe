@@ -20,7 +20,7 @@ Nika Abdollahi, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana 
     The following files must be provided:
     * 1_Summary
     * 2_IMGT-gapped-nt-sequences.txt
-  * See [example input files](https://github.com/julibinho/MobiLLe/Data/Real_datasets/IMGT_highvquest_output/toy_dataset)
+  * See [example input files](https://github.com/julibinho/MobiLLe/Data/Real_datasets/IMGT_highvquest_output/toy_dataset/)
   * You can use any V(D)J annotation software, but inputs shoude be formatted as above.
 
 ## Outputs
