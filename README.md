@@ -60,7 +60,7 @@ Nika Abdollahi, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana 
 
     - A png file containing:
 
-      ![alt text](https://github.com/julibinho/MobiLLe/tree/main/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_repertoire.png)
+      [example](https://github.com/julibinho/MobiLLe/tree/main/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_repertoire.png)
 
       A) Circle representation of the clones' abundances. Each circle symbolizes a clone, and its size represents the clone's abundance.
 
