@@ -142,6 +142,6 @@ Nika Abdollahi, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana 
 
 ## License, Patches, and Ongoing Developements
 
-  * The program is distributed under the .  
+  * The program is distributed under the CeCILL licence.  
   * [Feature requests and open issues](https://github.com/julibinho/MobiLLe/issues).
 
