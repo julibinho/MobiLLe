@@ -114,10 +114,13 @@ Nika Abdollahi, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana 
 ## Using MobiLLe 
   In the src/ run the following command:
   ```
-  $ bash run_MobiLLe.sh [input_repertoire_name] [output_repertoire_name]
+  $ bash run_MobiLLe.sh [input_repertoire_name] [output_repertoire_name] [options]
   ```
-                      
-  Output files will be placed as such:
+  
+  ### required arguments 
+  * [input_repertoire_name] is the path directory where are input files, for instance: the IMGT/highVquest's output folder path.
+  * [output_newick_file] is the output directory path
+   Output files will be placed as such:
   ```
   ~[output_repertoire_name]/[input_repertoire_name]_cluster_distribution.txt
                             [input_repertoire_name]_final_clusters_Fo.txt
@@ -126,7 +129,16 @@ Nika Abdollahi, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana 
                             [input_repertoire_name]_unannotated_seq.txt
                             [input_repertoire_name]_repertoire.png
  ```
- [input_repertoire_name] is the IMGT/highVquest's output folder name.
+
+  ### optional arguments [...options]
+
+  *  CDR3 amino acid identity threshold (by default 0.7)
+                      
+ For instance the following command can be run in the src/ folder:
+  ```
+  $ bash run_MobiLLe.sh  ../Data/Real_datasets/IMGT_highvquest_output/toy_dataset ../Data/Real_datasets/MobiLLe_output/toy_dataset 0.7
+  ```
+
 
 ## License, Patches, and Ongoing Developements
 
