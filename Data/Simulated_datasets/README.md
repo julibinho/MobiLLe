@@ -1,5 +1,5 @@
 
-### With Gctree simulator, we produce 12 simulated repertoires with different mutation rates
+### With [GCtree](https://github.com/matsengrp/gctree) simulator, we produce 12 simulated repertoires with different mutation rates
 
 For each simulated data set, we provide:
 
