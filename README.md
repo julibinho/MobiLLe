@@ -1,6 +1,6 @@
 # MobiLLe
 
-**A multi-objective based clustering for inferring BCR clones from high-throughput B cell repertoire data **
+**A multi-objective based clustering for inferring BCR clones from high-throughput B cell repertoire data**
 
 MobiLLe is a new method based on multi-objective clustering to detect clonally-related  sequences in BCR repertoires. It Our requires V(D)J annotations to obtain the initial clones and iteratively applies two objective functions that optimize cohesion and separation within clones simultaneously. 
 MobiLLe can accurately identify clone members, has fewer parameter settings and presents low running time and  minimal memory requirements. 
