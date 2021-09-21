@@ -2,12 +2,12 @@
 
 **A multi-objective based clustering for inferring BCR clones from high-throughput B cell repertoire data**
 
-MobiLLe is a new method based on multi-objective clustering to detect clonally-related  sequences in BCR repertoires. It Our requires V(D)J annotations to obtain the initial clones and iteratively applies two objective functions that optimize cohesion and separation within clones simultaneously. 
-MobiLLe can accurately identify clone members, has fewer parameter settings and presents low running time and  minimal memory requirements. 
+MobiLLe is a new method based on multi-objective clustering to detect clonally-related  sequences in BCR repertoires. It requires V(D)J annotations to obtain the initial clones and iteratively applies two objective functions that optimize cohesion and separation within clones simultaneously. 
+MobiLLe can accurately identify clone members, has fewer parameter settings and presents low running time and minimal memory requirements. 
 All these features constitute an attractive option for repertoire analysis, particularly in the clinical context for diagnosing and monitoring B cell malignancies.
 
 **REFERENCE**  
-
+Nika Abdollahi, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana S. Bernardes. A multi-objective based clustering for inferring BCR clones from high-throughput B cell repertoire data. 2021 To be submit
 
 **CONTACT**  
   E-mail: 
@@ -19,39 +19,40 @@ All these features constitute an attractive option for repertoire analysis, part
   * The IMGT/HighV-QUEST's output in one unzipped folder.
     The following files must be provided:
     * 1_Summary
-    * 2_IMGT-gapped
-  * See [example input files](https://github.com/NikaAb/BCR_GTG/tree/master/Data/Real_datasets/IMGT_highvquest_output/toy_dataset)
+    * 2_IMGT-gapped-nt-sequences.txt
+  * See [example input files](https://github.com/julibinho/MobiLLe/Data/Real_datasets/IMGT_highvquest_output/toy_dataset)
+  * You can use any V(D)J annotation software, but inputs shoude be formatted as above.
 
 ## Outputs
 
   * MobiLLe returns:
 
-    - 5 tab delimited file:
+    - 5 tab delimited files:
 
-      * [repertoire_name]\_unannotated_seq.txt : any sequences that could not be annotated fully [example](https://github.com/NikaAb/BCR_GTG/blob/master/Data/GTM_output/I1_IMGT/I1_IMGT_unannotated_seq.txt)
+      * [repertoire_name]\_unannotated_seq.txt : any sequence that could not be annotated fully [example](https://github.com/julibinho/MobiLLe/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_unannotated_seq.txt)
 
       The columns are:
       ```
       seq Id   functionality  IGHV_and_allele IGHJ_and_allele CDR3
       ```
-      * [repertoire_name]\_cluster_distribution.txt : clusters and their abundance sorted from highest to lowest [example](https://github.com/NikaAb/BCR_GTG/blob/master/Data/GTM_output/I1_IMGT/I1_IMGT_cluster_distribution.txt)
+      * [repertoire_name]\_cluster_distribution.txt : clusters and their abundance sorted from highest to lowest [example](https://github.com/julibinho/MobiLLe/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_cluster_distribution.txt)
 
       The columns are:
       ```
       cluster_Id   abundance
       ```
 
-      * [repertoire_name]\_initial_clusters_Fo.txt : initial clustering output. Sequences with the same IGHV and IGHJ genes, same CDR3 sequence length, and CDR3 identity higher than 70% are grouped together [example](https://github.com/NikaAb/BCR_GTG/blob/master/Data/GTM_output/I1_IMGT/I1_IMGT_initial_clusters_Fo.txt)
+      * [repertoire_name]\_initial_clusters_Fo.txt : initial clustering output. Sequences with the same IGHV and IGHJ genes, same CDR3 sequence length, and CDR3 identity higher than 70% are grouped together [example](https://github.com/julibinho/MobiLLe/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_initial_clusters_Fo.txt)
 
-      Each line contains the one cluster id and all the sequence ids of it's members.
+      Each line contains the cluster id and sequence ids of its members.
       ```
       cluster_Id   seqid1 seqid2 ...
       ```
-      * [repertoire_name]\_final_clusters_Fo.txt : final clustering output, after minimizing intraclonal distances and maximizing interclonal distances [example](https://github.com/NikaAb/BCR_GTG/blob/master/Data/GTM_output/I1_IMGT/I1_IMGT_final_clusters_Fo.txt)
+      * [repertoire_name]\_final_clusters_Fo.txt : final clustering output, after minimizing intraclonal distances and maximizing interclonal distances [example](https://github.com/julibinho/MobiLLe/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_final_clusters_Fo.txt)
       ```
       cluster_Id   seqid1 seqid2 ...
       ```
-      * [repertoire_name]\_final_clusters_seq_info.txt : each line contains the following information for each sequence ([example](https://github.com/NikaAb/BCR_GTG/blob/master/Data/GTM_output/I1_IMGT/I1_IMGT_final_clusters_seq_info.txt)):
+      * [repertoire_name]\_final_clusters_seq_info.txt : each line contains the following information for each sequence ([example](https://github.com/julibinho/MobiLLe/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_final_clusters_seq_info.txt)):
       ```
       Cluster_id__clonotype_id   seq Id  functionality  IGHV_and_allele IGHJ_and_allele CDR3 Junction
       ```
@@ -59,15 +60,15 @@ All these features constitute an attractive option for repertoire analysis, part
 
     - A png file containing:
 
-      ![alt text](https://github.com/NikaAb/BCR_GTG/blob/master/Data/GTM_output/I1_IMGT/I1_IMGT_repertoire.png )
+      ![alt text](https://github.com/julibinho/MobiLLe/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_repertoire.png )
 
-      A) Circle representation of the clone abundance. Each  circle  symbolizes  a  clone, and the clone’s abundance is represented by its size.
+      A) Circle representation of the clones' abundances. Each circle symbolizes a clone, and its size represents the clone's abundance.
 
       B) Number of sequences in each clone, all clones are represented, vertical axe is in log scale.
 
-      C) Lorenz curve and Gini index. A Lorenz curve shows the graphical represen-tation of clonal inequality. On the horizontal axe, it plots the cumulative fraction of total clones when ordered from the less to the most abundant; On the vertical axe, it shows the cumulative fraction of sequences.
+      C) Lorenz curve and Gini index. A Lorenz curve shows the graphical representation of clonal inequality. On the horizontal axe, it plots the cumulative fraction of total clones when ordered from the less to the most abundant; On the vertical axe, it shows the cumulative fraction of sequences.
 
-      D) Percentage of the 100 most abundant clones.
+      D) Size distribution (percentage) of the 100 most abundant clones.
        
 ## Requirements 
 
@@ -127,9 +128,10 @@ All these features constitute an attractive option for repertoire analysis, part
                             [input_repertoire_name]_unannotated_seq.txt
                             [input_repertoire_name]_repertoire.png
  ```
- [input_repertoire_name] is the IMGT/highVquast's output folder name.
+ [input_repertoire_name] is the IMGT/highVquest's output folder name.
+
 ## License, Patches, and Ongoing Developements
 
   * The program is distributed under the .  
-  * [Feature requests and open issues](https://github.com/NikaAb/BCR_GTG/issues).
+  * [Feature requests and open issues](https://github.com/julibinho/MobiLLe/issues).
 
