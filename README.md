@@ -29,30 +29,30 @@ Nika Abdollahi, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana 
 
     - 5 tab delimited files:
 
-      * [repertoire_name]\_unannotated_seq.txt : any sequence that could not be annotated fully [example](https://github.com/julibinho/MobiLLe/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_unannotated_seq.txt)
+      * [repertoire_name]\_unannotated_seq.txt : any sequence that could not be annotated fully [example](https://github.com/julibinho/MobiLLe/tree/main/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_unannotated_seq.txt)
 
       The columns are:
       ```
       seq Id   functionality  IGHV_and_allele IGHJ_and_allele CDR3
       ```
-      * [repertoire_name]\_cluster_distribution.txt : clusters and their abundance sorted from highest to lowest [example](https://github.com/julibinho/MobiLLe/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_cluster_distribution.txt)
+      * [repertoire_name]\_cluster_distribution.txt : clusters and their abundance sorted from highest to lowest [example](https://github.com/julibinho/MobiLLe/tree/main/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_cluster_distribution.txt)
 
       The columns are:
       ```
       cluster_Id   abundance
       ```
 
-      * [repertoire_name]\_initial_clusters_Fo.txt : initial clustering output. Sequences with the same IGHV and IGHJ genes, same CDR3 sequence length, and CDR3 identity higher than 70% are grouped together [example](https://github.com/julibinho/MobiLLe/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_initial_clusters_Fo.txt)
+      * [repertoire_name]\_initial_clusters_Fo.txt : initial clustering output. Sequences with the same IGHV and IGHJ genes, same CDR3 sequence length, and CDR3 identity higher than 70% are grouped together [example](https://github.com/julibinho/MobiLLe/tree/main/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_initial_clusters_Fo.txt)
 
       Each line contains the cluster id and sequence ids of its members.
       ```
       cluster_Id   seqid1 seqid2 ...
       ```
-      * [repertoire_name]\_final_clusters_Fo.txt : final clustering output, after minimizing intraclonal distances and maximizing interclonal distances [example](https://github.com/julibinho/MobiLLe/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_final_clusters_Fo.txt)
+      * [repertoire_name]\_final_clusters_Fo.txt : final clustering output, after minimizing intraclonal distances and maximizing interclonal distances [example](https://github.com/julibinho/MobiLLe/tree/main/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_final_clusters_Fo.txt)
       ```
       cluster_Id   seqid1 seqid2 ...
       ```
-      * [repertoire_name]\_final_clusters_seq_info.txt : each line contains the following information for each sequence ([example](https://github.com/julibinho/MobiLLe/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_final_clusters_seq_info.txt)):
+      * [repertoire_name]\_final_clusters_seq_info.txt : each line contains the following information for each sequence ([example](https://github.com/julibinho/MobiLLe/tree/main/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_final_clusters_seq_info.txt)):
       ```
       Cluster_id__clonotype_id   seq Id  functionality  IGHV_and_allele IGHJ_and_allele CDR3 Junction
       ```
@@ -60,7 +60,7 @@ Nika Abdollahi, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana 
 
     - A png file containing:
 
-      ![alt text](https://github.com/julibinho/MobiLLe/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_repertoire.png )
+      ![alt text](https://github.com/julibinho/MobiLLe/tree/main/Data/Real_datasets/MobiLLe_output/toy_dataset/toy_dataset_repertoire.png )
 
       A) Circle representation of the clones' abundances. Each circle symbolizes a clone, and its size represents the clone's abundance.
 
