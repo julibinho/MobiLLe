@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-mkdir $2
+
 str=$1
 IFS='/' # delimiter
 read -ra ADDR <<< "$str" # str is read into an array as tokens separated by IFS
@@ -18,7 +18,14 @@ else
 fi
 
 
-mkdir $2/${name}
+if [[ -d "$2/${name}" ]]
+then
+    echo "$2/${name} exists, please remove it before continuing."
+    exit
+fi
+
+
+mkdir -p $2/${name}
 
 python format_labeling_imgt.py -s $1/1_Summary.txt -g $1/2_IMGT-gapped-nt-sequences.txt -o ${name}_seq_Fo.txt
 python initial_clustering.py -i ${name}_seq_Fo_V_CDR3_Jseq.txt -o ${name} -s $T
