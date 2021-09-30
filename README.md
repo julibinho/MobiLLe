@@ -80,6 +80,11 @@ Nika Abdollahi, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana 
       ```
 
   * matplotlib
+    ```
+      conda install -c conda-forge matplotlib
+     ```
+     or
+  
       ```
       pip install matplotlib
       ```
