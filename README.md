@@ -141,7 +141,7 @@ Nika Abdollahi, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana 
                       
  For instance the following command can be run in the src/ folder:
   ```
-  $ bash run_MobiLLe.sh  ../Data/Real_datasets/IMGT_highvquest_output/toy_dataset ../Data/Real_datasets/MobiLLe_output/toy_dataset 0.7
+  $ bash run_MobiLLe.sh  ../Data/Real_datasets/IMGT_highvquest_output/toy_dataset ../Data/Real_datasets/MobiLLe_output/ 0.7
   ```
 
 
