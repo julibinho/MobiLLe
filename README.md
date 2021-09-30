@@ -7,7 +7,7 @@ MobiLLe can accurately identify clone members, has fewer parameter settings and 
 All these features constitute an attractive option for repertoire analysis, particularly in the clinical context for diagnosing and monitoring B cell malignancies.
 
 **REFERENCE**  
-Nika Abdollahi, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana S. Bernardes. A multi-objective based clustering for inferring BCR clones from high-throughput B cell repertoire data. 2021 To be submit
+Nika Abdollahi, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana S. Bernardes. A multi-objective based clustering for inferring BCR clones from high-throughput B cell repertoire data. 2021 To be submitted
 
 **CONTACT**  
   E-mail: 
@@ -21,7 +21,7 @@ Nika Abdollahi, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana 
     * 1_Summary
     * 2_IMGT-gapped-nt-sequences.txt
   * See [example input files](https://github.com/julibinho/MobiLLe/tree/main/Data/Real_datasets/IMGT_highvquest_output/toy_dataset)
-  * You can use any V(D)J annotation software, but inputs shoude be formatted as above.
+  * You can use any V(D)J annotation software, but inputs should be formatted as above.
 
 ## Outputs
 
