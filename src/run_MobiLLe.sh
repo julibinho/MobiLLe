@@ -5,7 +5,8 @@ mkdir $2
 str=$1
 IFS='/' # delimiter
 read -ra ADDR <<< "$str" # str is read into an array as tokens separated by IFS
-name=${ADDR[-1]}
+count=$(expr ${#ADDR[@]} - 1)
+name=${ADDR[$count]}
 IFS=''
 
 export T=$3
