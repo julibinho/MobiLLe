@@ -70,6 +70,10 @@ Nika Abdollahi, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana 
        
 ## Requirements 
 
+  * We strongly recommend [anaconda](https://docs.anaconda.com/anaconda/install/) environment. 
+  
+  * Python version 3 or later
+
   * numpy :
       ```
       conda install numpy
