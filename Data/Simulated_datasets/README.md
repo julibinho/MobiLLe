@@ -4,7 +4,7 @@
 For each simulated data set, we provide:
 
 * fasta file
-* IMGT_highvquest output that can be used as input in MobiLLe
-* truly clonal relationships 
+* IMGT_highvquest output that is used as input by MobiLLe
+* truly clonal relationships according to the simulation
 
 
