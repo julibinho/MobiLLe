@@ -1,1 +1,11 @@
-
+Total sequence count :  3345
+Number of low quality sequences that have been eliminated from the analysis (N in the sequence):  0
+Number of low abundant sequences that have been eliminated from the analysis, using the threshold of 0:  0
+Number of sequences to be analysed :  3345
+The AIRR file reading step execution time : 0.036487579345703125 seconds 
+Number of discarded sequences because of incompelete gene annoation by IMGT:  675
+Number of sequences to be clustered :  2670
+The initial clustering step execution time : 0.9161899089813232 seconds 
+The refinement step execution time : 0.023354291915893555 seconds 
+Creating input file for repertoire visualization execution time : 0.010504961013793945 seconds 
+The uniformity compute time : 0.010730981826782227 seconds 
