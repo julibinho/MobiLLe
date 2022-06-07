@@ -1,0 +1,8 @@
+inputDir=Input/toy_dataset
+outputDir=Output/toy_dataset
+i=toy_dataset
+t=0
+s=0.7
+q=1
+m=0
+r=1
