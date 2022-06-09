@@ -154,10 +154,10 @@ Nika Abdollahi, Lucile Jeusset, Anne de Septenville, Hugues Ripoche,  Frederic D
   *  t : Abundance filter, the minimum count of sequence to be considered in the analysis, if -t 0, all the sequences will be analysed
   *  q : Quality filter, if -q 1, sequences contaning N will be discarded from the analysis (0 : no, 1 :yes)
   *  r : Apply refining step (0 : no , 1 :yes). If -r 0, there will be no need to provide v, j, c, and m parameters.
-  *  v : V-distance (1- binaire, 2-levenstein,3- [GIANA](https://github.com/s175573/GIANA), 4-K-mers) by default -v 1
-  *  j : J-distance (1- binaire, 2-levenstein,3- GIANA, 4-K-mers) by default -j 2
-  *  c : CDR3-distance (1- binaire, 2-levenstein,3- GIANA, 4-K-mers) by default -c 2
-  *  d : Combine distance (1-mean, Tuple with three weights for  (IGHV, CDR3, IGHJ)). 
+  *  v : V-distance (1- binaire, 2-levenstein,3-[GIANA](https://github.com/s175573/GIANA), 4-K-mers) by default -v 1
+  *  j : J-distance (1- binaire, 2-levenstein,3-[GIANA](https://github.com/s175573/GIANA), 4-K-mers) by default -j 2
+  *  c : CDR3-distance (1- binaire, 2-levenstein,3-[GIANA](https://github.com/s175573/GIANA), 4-K-mers) by default -c 2
+  *  d : Combine distance (1-mean, or three weights for  (IGHV, CDR3, and IGHJ), example -d123). 
   *  m : Merging singletons (0 : no, 1 :yes)
                       
  Exemple : 
