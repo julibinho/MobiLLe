@@ -154,12 +154,12 @@ Nika Abdollahi, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana 
 *  s : CDR3 amino acid identity threshold (by default 0.7) for the initial clustering step (between 0 and 1)
   *  t : Abundance filter, the minimum count of sequence to be considered in the analysis, if -t 0, all the sequences will be analysed
   *  q : Quality filter, if -q 1, sequences contaning N will be discarded from the analysis (0 : no, 1 :yes)
-  *  r : Apply refining step (0 : no , 1 :yes). If -r 0, there will be no need to provide v, j, and c information.
+  *  r : Apply refining step (0 : no , 1 :yes). If -r 0, there will be no need to provide v, j, c, and m parameters.
   *  v : V-distance (1- binaire, 2-levenstein,3- GIANA, 4-K-mers) by default -v 1
   *  j : J-distance (1- binaire, 2-levenstein,3- GIANA, 4-K-mers) by default -j 2
   *  c : CDR3-distance (1- binaire, 2-levenstein,3- GIANA, 4-K-mers) by default -c 2
-  *  d : Combine distance (1-mean, 2-  weighted mean (requires a Tuple with weights), 3-harmonic mean). 
-  *  m : Merging the singletons (0 : no, 1 :yes)
+  *  d : Combine distance (1-mean, Tuple with three weights for  (IGHV, CDR3, IGHJ)). 
+  *  m : Merging singletons (0 : no, 1 :yes)
                       
  Exemple : 
   ```
