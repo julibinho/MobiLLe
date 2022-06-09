@@ -2,9 +2,8 @@
 
 **A multi-objective based clustering for inferring BCR clonal lineages from high-throughput B-cell repertoire data**
 
-MobiLLe is a new method based on multi-objective clustering to detect clonally-related  sequences in BCR repertoires. It requires V(D)J annotations to obtain the initial clones and iteratively applies two objective functions that optimize cohesion and separation within clones simultaneously. 
-MobiLLe can accurately identify clone members, has fewer parameter settings and presents low running time and minimal memory requirements. 
-All these features constitute an attractive option for repertoire analysis, particularly in the clinical context for diagnosing and monitoring B cell malignancies.
+MobiLLe is a new method based on multi-objective clustering to detect clonally-related  sequences in BCR repertoires. It requires V(D)J annotations to obtain the initial clones and iteratively applies two objective functions that optimize cohesion and separation within clonal lineages simultaneously. 
+MobiLLe is computationally more efficient and quicker than state-of-art tools and does not require any training process or hyper-parameter optimization. It can easily manage large-scale experimental repertoires, providing useful plots to help researchers detect clonally-related sequences in high-throughput B cell repertoire data.
 
 **REFERENCE**  
 Nika Abdollahi, Lucile Jeusset, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana Silva Bernardes. A multi-objective based clustering for inferring BCR clonal lineages from high-throughput B cell repertoire data. 2022 (under revision)
@@ -27,11 +26,11 @@ Nika Abdollahi, Lucile Jeusset, Anne de Septenville, Hugues Ripoche,  Frederic D
 
     - 9 tab delimited files:
 
-      * [repertoire_name]\_repertoire_two_levels_info.txt : each lines contains informations of a clone [example](https://github.com/julibinho/MobiLLe/blob/main/Output/toy_dataset/toy_dataset_repertoire_two_levels_info.txt)
+      * [repertoire_name]\_repertoire_two_levels_info.txt : each lines contains informations of a clonal lineage [example](https://github.com/julibinho/MobiLLe/blob/main/Output/toy_dataset/toy_dataset_repertoire_two_levels_info.txt)
 
       The columns are:
       ```
-      Clone number   abundance   number of reads   Clonotype abundance, functionality   IGHV_and_allele   IGHJ_and_allele   Clonotypes CDR3, sequence_id
+      Clonal lineage id   abundance   number of reads   Clonotype abundance, functionality   IGHV_and_allele   IGHJ_and_allele   Clonotypes CDR3, sequence_id
       ```
       * [repertoire_name]\_cluster_distribution.txt : clusters and their abundance sorted from highest to lowest [example](https://github.com/julibinho/MobiLLe/blob/main/Output/toy_dataset/toy_dataset_cluster_distribution.txt)
 
@@ -40,9 +39,9 @@ Nika Abdollahi, Lucile Jeusset, Anne de Septenville, Hugues Ripoche,  Frederic D
       cluster_Id   abundance
       ```
 
-      * [repertoire_name]\_initial_clusters_Fo.txt : initial clustering output. Sequences with the same IGHV and IGHJ genes, same CDR3 sequence length, and CDR3 identity higher than 70% are grouped together [example](https://github.com/julibinho/MobiLLe/blob/main/Output/toy_dataset/toy_dataset_initial_clusters_Fo.txt)
+      * [repertoire_name]\_initial_clusters_Fo.txt : initial clustering output. Sequences with the same IGHV and IGHJ genes, same CDR3 sequence length, and CDR3 identity higher than s% are grouped together [example](https://github.com/julibinho/MobiLLe/blob/main/Output/toy_dataset/toy_dataset_initial_clusters_Fo.txt)
 
-      Each line contains the cluster id and sequence ids of its members.
+      Each line contains the cluster id and sequence ids.
       ```
       cluster_Id   seqid1 seqid2 ...
       ```
@@ -66,13 +65,13 @@ Nika Abdollahi, Lucile Jeusset, Anne de Septenville, Hugues Ripoche,  Frederic D
 
     - A png file containing [example](https://github.com/julibinho/MobiLLe/blob/main/Output/toy_dataset/toy_dataset_repertoire.png)
 
-      A) Circle representation of the clones' uniformity and abundances. Each circle symbolizes a clone and for the 20 most abundant clones, its size represents the clone's abundance.
+      A) Circle representation of the clonal lineages' uniformity and abundances. Each circle symbolizes a clonal lineage and and circle area its abundance. We represent only the 20 most abundant groups.
 
-      B) Number of sequences in each clone, all clones are represented, vertical axe is in log scale.
+      B) Number of sequences in each clonal lineage, all groups are represented, vertical axe is in log scale.
 
-      C) Lorenz curve and Gini index. A Lorenz curve shows the graphical representation of clonal inequality. On the horizontal axe, it plots the cumulative fraction of total clones when ordered from the less to the most abundant; On the vertical axe, it shows the cumulative fraction of sequences.
+      C) Lorenz curve and Gini index. A Lorenz curve shows the graphical representation of clonal inequality. On the horizontal axe, it plots the cumulative fraction of total clonal lineages when ordered from the less to the most abundant; On the vertical axe, it shows the cumulative fraction of sequences.
 
-      D) Size distribution (percentage) of the 100 most abundant clones.
+      D) Size distribution (percentage) of the 100 most abundant clonal lineages.
        
 ## Requirements 
 
@@ -155,7 +154,7 @@ Nika Abdollahi, Lucile Jeusset, Anne de Septenville, Hugues Ripoche,  Frederic D
   *  t : Abundance filter, the minimum count of sequence to be considered in the analysis, if -t 0, all the sequences will be analysed
   *  q : Quality filter, if -q 1, sequences contaning N will be discarded from the analysis (0 : no, 1 :yes)
   *  r : Apply refining step (0 : no , 1 :yes). If -r 0, there will be no need to provide v, j, c, and m parameters.
-  *  v : V-distance (1- binaire, 2-levenstein,3- GIANA, 4-K-mers) by default -v 1
+  *  v : V-distance (1- binaire, 2-levenstein,3- [GIANA](https://github.com/s175573/GIANA), 4-K-mers) by default -v 1
   *  j : J-distance (1- binaire, 2-levenstein,3- GIANA, 4-K-mers) by default -j 2
   *  c : CDR3-distance (1- binaire, 2-levenstein,3- GIANA, 4-K-mers) by default -c 2
   *  d : Combine distance (1-mean, Tuple with three weights for  (IGHV, CDR3, IGHJ)). 
