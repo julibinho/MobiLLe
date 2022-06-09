@@ -7,7 +7,7 @@ MobiLLe can accurately identify clone members, has fewer parameter settings and 
 All these features constitute an attractive option for repertoire analysis, particularly in the clinical context for diagnosing and monitoring B cell malignancies.
 
 **REFERENCE**  
-Nika Abdollahi, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana S. Bernardes. A multi-objective based clustering for inferring BCR clones from high-throughput B cell repertoire data. 2021 To be submitted
+Nika Abdollahi, Lucile Jeusset, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana Silva Bernardes. A multi-objective based clustering for inferring BCR clonal lineages from high-throughput B cell repertoire data. 2022 (under revision)
 
 **CONTACT**  
   E-mail: 
