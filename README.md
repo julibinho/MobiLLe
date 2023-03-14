@@ -6,7 +6,7 @@ MobiLLe is a new method based on multi-objective clustering to detect clonally-r
 MobiLLe is computationally more efficient and quicker than state-of-art tools and does not require any training process or hyper-parameter optimization. It can easily manage large-scale experimental repertoires, providing useful plots to help researchers detect clonally-related sequences in high-throughput B cell repertoire data.
 
 **REFERENCE**  
-Nika Abdollahi, Lucile Jeusset, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana Silva Bernardes. A multi-objective based clustering for inferring BCR clonal lineages from high-throughput B cell repertoire data. 2022 (under revision)
+Nika Abdollahi, Lucile Jeusset, Anne de Septenville, Hugues Ripoche,  Frederic Davi and Juliana Silva Bernardes. "A multi-objective based clustering for inferring BCR clonal lineages from high-throughput B cell repertoire data." PLoS computational biology 18, no. 8 (2022): e1010411.
 
 **CONTACT**  
   E-mail: 
