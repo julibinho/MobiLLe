@@ -103,7 +103,7 @@ def Plot(Clustering_lables,Dataset_name,adress_tempo_file,uniformity_data):
 	ax.annotate(str(plot_letter[1]), xy=(-0.08,1.1 ), xycoords='axes fraction', fontsize=14,horizontalalignment='right', verticalalignment='top')
 	l=plt.plot(X,'k.')
 	plt.setp(l, markersize=3)
-	ax.set_yscale("log", nonpositive='clip')
+	ax.set_yscale("log", nonposy='clip')         #Changed 08/06/2023
 	plt.xlabel('Clusters')
 	plt.ylabel('Number of sequence per cluster')
 
