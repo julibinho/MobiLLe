@@ -1,6 +1,6 @@
 import sys, os
 import numpy as np
-from Bio.SubsMat.MatrixInfo import blosum62
+#from Bio.SubsMat.MatrixInfo import blosum62
 from sklearn.manifold import MDS
 from scipy.spatial import distance
 
