@@ -103,6 +103,7 @@ do
     esac
 done
 
+
 # Catching no arguments 
 if [ $OPTIND -eq 1 ]; then help; fi
 
@@ -111,6 +112,7 @@ if [ $OPTIND -eq 1 ]; then help; fi
 
 # Set the delimiter
 IFS='='
+
 
 
 
@@ -246,7 +248,9 @@ fi
 
 export BASE_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 export SCRIPTS_DIR=$BASE_DIR/Code/src/
-export RESULT_DIR=$OutputPath
+export RESULT_DIR=$OutPath
+
+echo ">>> $OutPath"
 
 
 mkdir $RESULT_DIR
